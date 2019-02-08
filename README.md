@@ -5,10 +5,11 @@ Setup:
 
 1. Run create-db.sql in your MySQL environment (I use Sequel Pro on macOS). This will create the games and bye tables, as well as populate the bye week data for each team.
 2. Edit the host, username, and password settings in db.js to reflect your local environment.
-3. Navigate to the project root in Terminal and run 'node injest.js'. This will insert all 256 2018 regular season games into the 'games' table. 
-4. After injest is complete, press Ctrl + C to kill the process.
-5. To query the data, start the app server by running 'node app.js'.
-6. The endpoints can be found at:
+3. Navigate to the project root in Terminal and run 'npm install' to download the required node modules. 
+4. Run 'node injest.js'. This will insert all 256 2018 regular season games into the 'games' table. 
+5. After the injest is complete (should only take a couple seconds), press Ctrl + C to kill the process.
+6. To query the data, start the app server by running 'node app.js'.
+7. The endpoints can be found at:
 
 localhost:3000/bye/:year/:team?
 
